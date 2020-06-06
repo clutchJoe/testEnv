@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "comma-dangle": "off",
+    "no-use-before-define": "off",
+    "arrow-parens": ["error", "always"],
+    "max-len": ["error", 120],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "mocha/no-exclusive-tests": "error",
+    "prefer-arrow-callback": 0,
+    "mocha/prefer-arrow-callback": 2,
+    "linebreak-style": [0 ,"error", "windows"]
+  }
+}

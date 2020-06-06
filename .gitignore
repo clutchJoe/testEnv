@@ -1,0 +1,10 @@
+.idea/
+daemon/
+dist/
+node_modules/
+storybook/
+.bundle
+.DS_Store
+.env
+Thumb.db
+*.tern-project
