@@ -4,7 +4,8 @@
   "description": "To quickly set up the mocha test environment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "mocha --exit 'test/test.setup.js' 'test/**/*.spec.js'"
   },
   "keywords": [
     "mocha",
@@ -17,6 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
